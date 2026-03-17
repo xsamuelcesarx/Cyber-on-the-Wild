@@ -10,6 +10,8 @@ Description:
 
 Demonstration of BadUSB techniques for educational and cybersecurity awareness purposes.
 
+Check my docx with the same name available for a walkthrough with images and more intuitive.
+
 --------------------------------------------------
 
 OVERVIEW
