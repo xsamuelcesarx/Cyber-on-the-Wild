@@ -1,6 +1,6 @@
 Title: USB Security Demonstration – BadUSB Techniques
 
-Author: Samuel Cesar
+Author: Samuel Cesar 
 
 Role: Cyber Security Professional
 
