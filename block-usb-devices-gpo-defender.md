@@ -1,7 +1,11 @@
 Title: Block USB Devices on Windows
+
 Author: Samuel Cesar
+
 Role: Cyber Security Professional
+
 Date: March 2026
+
 Description:
 
 Practical walkthrough demonstrating how to secure Windows endpoints by blocking and managing USB devices using enterprise tools such as Group Policy and Microsoft Defender XDR. 
