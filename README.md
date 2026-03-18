@@ -3,6 +3,8 @@ My name is Samuel Cesar, and I have been studying Cyber Security for over a year
 
 Certifications and Achievements:
 
+IEFP – Cybersecurity Specialist Technician (Level 5)
+
 Blue Team Level 1 (BTL1) – Gold Coin
 
 Splunk Core Certified Power User
@@ -14,3 +16,10 @@ Microsoft AZ-900 (Azure Fundamentals)
 Fortinet Network Security Expert (FCA)
 
 CCNA (expired)
+
+Blue Team Labs Online: #https://blueteamlabs.online/public/user/6255328b393299c2c9a387
+
+Linkedln: #www.linkedin.com/in/samuel-cesar-9100261a5
+
+Microsoft SC-200 In Progress
+
