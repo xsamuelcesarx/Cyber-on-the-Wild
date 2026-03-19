@@ -231,3 +231,52 @@ Summary:
 - Allow PowerShell scripts (temporary)
 - Re-enable network when needed
 - Always maintain a clean snapshot baseline
+
+- --------------------------------------------
+
+Windows Sysprep – Preparing Cloned VMs
+
+Purpose:
+Use Sysprep to reset a cloned Windows VM to a clean state. This ensures the VM is ready for use from zero, with a new user account, PC name, and configuration.
+Important: Run only on cloned VMs, never on the reference VM.
+
+CMD Method:
+Open Command Prompt as Administrator and run:
+
+sysprep /oobe /generalize /shutdown
+
+Options explained:
+- /oobe      Boot into Out-of-Box Experience on next startup
+- /generalize Remove unique system info (SID, PC name, logs, hardware identifiers)
+- /shutdown  Turn off the VM after Sysprep completes
+
+GUI Method (Click):
+1. Open File Explorer and navigate to: C:\Windows\System32\Sysprep\
+2. Double-click sysprep.exe
+3. In the Sysprep window:
+   - System Cleanup Action: Select "Enter System Out-of-Box Experience (OOBE)"
+   - Check "Generalize"
+   - Shutdown Options: Select "Shutdown"
+4. Click OK to start the process
+
+Workflow for Cloned VMs:
+1. Clone the Windows VM from the reference image
+2. Boot the cloned VM
+3. Run Sysprep (CMD or GUI)
+4. Boot the VM again
+5. Complete OOBE:
+   - Create a new local user
+   - Assign a new PC name
+   - Configure region, language, and network settings
+6. Join Active Directory (if applicable)
+7. Apply organizational policies / GPOs
+
+Important Notes:
+- Sysprep prepares cloned VMs to be clean and ready for use from zero
+- Limited to ~3 runs per VM
+- Do not run on a VM already joined to a domain
+- Always test the VM after Sysprep before production use
+- Use only after cloning, never on the original reference VM
+
+Summary:
+Sysprep ensures cloned Windows VMs are clean, unique, and ready for deployment, with no leftover settings, SIDs, or user data from the source image.
